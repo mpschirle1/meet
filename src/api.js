@@ -71,12 +71,12 @@ export const getAccessToken = async () => {
       const { authUrl } = results.data;
       return (window.location.href = authUrl);
     }
-    return code && getAccessToken(code);
+    return code && getToken(code);
   }
   return accessToken;
 };
 
-export const getToken = async (code) => {
+const getToken = async (code) => {
   const encodeCode = encodeURIComponent(code);
   const { access_token } = await fetch(
     `https://ucl3ccqkbd.execute-api.us-west-1.amazonaws.com/dev/api/token/${encodeCode}`
