@@ -3,10 +3,12 @@ import React, { Component } from "react";
 class NumberOfEvents extends Component {
   state = {
     eventQty: 32,
-  }
+  };
 
   handleQtyChange = (event) => {
-    const value = event.target.value;
+    let value = event.target.value;
+    if (value < 0) value = 0;
+    this.props.updateEvents(null, value);
     this.setState({
       eventQty: value,
     });
@@ -22,8 +24,7 @@ class NumberOfEvents extends Component {
             className="Quantity"
             value={this.state.eventQty}
             onChange={this.handleQtyChange}
-          >
-          </input>
+          ></input>
         </label>
       </div>
     );

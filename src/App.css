@@ -1,11 +1,43 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+@import url(https://fonts.googleapis.com/css2?family=Abel&display=swap);
+
+:root {
+  --background: #333;
+  --event: #282828;
+  --button: #789759;
+  --text-color: #ccc;
+  --body-font: "Abel", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: #ccc;
+  font-family: var(--body-font);
+}
+
 .App {
-  text-align: center;
   padding: 2% 5%;
 }
 
 .App * {
   box-sizing: border-box;
+}
+
+.filter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0.5em;
+}
+
+@media (max-width: 675px) {
+  .filter {
+    text-align: center;
+  }
+}
+
+.EventList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5em;
 }
 
 ul {
@@ -14,7 +46,7 @@ ul {
 }
 
 p {
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 .display-none {
@@ -27,26 +59,18 @@ p {
 input[type="text"],
 input[type="number"] {
   padding: 8px 6px 8px 10px;
+  margin: 1%;
   border-radius: 4px;
   outline: none;
   border: 1px solid #ccc;
   font-size: 14px;
   line-height: 20px;
   align-self: center;
-  height: 38px;
+  height: 30px;
 }
 
 .city {
   width: 250px;
-}
-
-.CitySearch {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 300px;
-  max-width: 300px;
-  margin: auto;
-  position: relative;
 }
 
 .suggestions {
@@ -76,23 +100,54 @@ input[type="number"] {
   background-color: #bcdcdb;
 }
 
-.event {
-  padding: 10px 10px 35px;
-  margin-bottom: 10px;
+.Event {
+  background-color: var(--event);
+  padding: 10px 20px 35px;
   text-align: left;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
   position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35);
 }
 
-.details-btn {
+.Event > h3 {
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.Details > h3 {
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.Description {
+  margin-bottom: 10px;
+}
+
+.Calendar-link {
+  color: var(--button);
+}
+
+.Calendar-link:hover {
+  opacity: 0.8;
+}
+
+.Hide-details,
+.Show-details {
+  background-color: var(--button);
+  color: var(--text-color);
   position: absolute;
-  right: 5px;
-  bottom: 5px;
+  right: 15px;
+  bottom: 15px;
   padding: 5px 8px;
-  border-radius: 4px;
+  border-radius: 5px;
+  border: none;
   outline: none;
   cursor: pointer;
+  transition-duration: 0.4s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.Hide-details:hover,
+.Show-details:hover {
+  opacity: 0.8;
 }
 
 .name {
@@ -114,10 +169,17 @@ input[type="number"] {
   overflow-x: hidden;
 }
 
-.numberOfEvents {
-  width: 200px;
-  margin: 20px auto;
-  text-align: center;
+.NumberOfEvents {
+  text-align: end;
+}
+
+@media (max-width: 675px) {
+  .NumberOfEvents {
+    text-align: center;
+  }
+  .NumberOfEvents > label {
+    display: inline-block;
+  }
 }
 
 .button-wrapper {
@@ -197,8 +259,6 @@ input[type="number"] {
   letter-spacing: 0.2px;
   font-family: "Roboto";
 }
-
-
 
 @media only screen and (min-width: 992px) {
   .data-vis-wrapper {

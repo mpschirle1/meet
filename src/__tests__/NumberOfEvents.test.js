@@ -4,8 +4,13 @@ import NumberOfEvents from "../NumberOfEvents";
 
 describe("<NumberOfEvents /> component", () => {
   let eventQty, NumberOfEventsWrapper;
+  function updateEvents(location, eventCount) {
+    console.log(location, eventCount);
+  }
   beforeAll(() => {
-    NumberOfEventsWrapper = shallow(<NumberOfEvents eventQty={eventQty} />);
+    NumberOfEventsWrapper = shallow(
+      <NumberOfEvents eventQty={eventQty} updateEvents={updateEvents} />
+    );
   });
 
   test("render text input", () => {
@@ -14,7 +19,9 @@ describe("<NumberOfEvents /> component", () => {
 
   test("renders number input correctly", () => {
     const eventQty = NumberOfEventsWrapper.state("eventQty");
-    expect(NumberOfEventsWrapper.find(".Quantity").prop("value")).toBe(eventQty);
+    expect(NumberOfEventsWrapper.find(".Quantity").prop("value")).toBe(
+      eventQty
+    );
   });
 
   test("Default event quantity is 32", () => {
@@ -25,9 +32,8 @@ describe("<NumberOfEvents /> component", () => {
     NumberOfEventsWrapper.setState({
       eventQty: 32,
     });
-    const eventObject = { target: { value: 2 }};
+    const eventObject = { target: { value: 2 } };
     NumberOfEventsWrapper.find(".Quantity").simulate("change", eventObject);
     expect(NumberOfEventsWrapper.state("eventQty")).toBe(2);
   });
-
 });
