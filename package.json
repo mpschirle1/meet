@@ -56,8 +56,10 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.7",
     "eslint": "^6.6.0",
-    "eslint-plugin-jest": "^27.1.6",
+    "eslint-plugin-jest": "^23.20.0",
     "gh-pages": "^4.0.0",
-    "prettier": "^2.8.1"
+    "jest-cucumber": "^3.0.0",
+    "prettier": "^2.8.1",
+    "puppeteer": "^3.3.0"
   }
 }
