@@ -28,12 +28,6 @@ body {
   gap: 0.5em;
 }
 
-@media (max-width: 675px) {
-  .filter {
-    text-align: center;
-  }
-}
-
 .EventList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -46,7 +40,7 @@ ul {
 }
 
 p {
-  margin: 10px 0;
+  margin: 0;
 }
 
 .display-none {
@@ -77,13 +71,18 @@ input[type="number"] {
   width: 250px;
 }
 
+.InputWrapper {
+  position: relative;
+  display: inline-block;
+}
+
 .suggestions {
+  opacity: 0.98;
   width: 250px;
   position: absolute;
   z-index: 2;
   align-self: center;
-  margin: 0;
-  top: 43px;
+  margin: 0.5%;
   font-size: 14px;
   box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
 }
@@ -184,6 +183,12 @@ input[type="number"] {
   .NumberOfEvents > label {
     display: inline-block;
   }
+  .filter {
+    text-align: center;
+  }
+  .suggestions {
+    text-align: center;
+  }
 }
 
 .button-wrapper {
@@ -192,11 +197,6 @@ input[type="number"] {
   grid-gap: 20px;
   padding: 20px;
   font-family: sans-serif;
-}
-
-.Alert {
-  position: fixed;
-  top: 20px;
 }
 
 .data-vis-wrapper {

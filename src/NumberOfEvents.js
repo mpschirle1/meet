@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { ErrorAlert } from "./Alert";
 
 class NumberOfEvents extends Component {
   state = {
@@ -7,11 +8,18 @@ class NumberOfEvents extends Component {
 
   handleQtyChange = (event) => {
     let value = event.target.value;
-    if (value < 0) value = 0;
-    this.props.updateEvents(null, value);
-    this.setState({
-      eventQty: value,
-    });
+    if (value < 1 || value > 32) {
+      this.setState({
+        eventQty: value,
+        infoText: "Select number from 1 to 32.",
+      });
+    } else {
+      this.props.updateEvents(null, value);
+      this.setState({
+        eventQty: value,
+        infoText: "",
+      });
+    }
   };
 
   render() {
@@ -26,6 +34,7 @@ class NumberOfEvents extends Component {
             onChange={this.handleQtyChange}
           ></input>
         </label>
+        <ErrorAlert text={this.state.infoText} />
       </div>
     );
   }
