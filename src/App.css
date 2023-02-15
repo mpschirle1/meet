@@ -40,6 +40,10 @@ ul {
 }
 
 p {
+  margin: 10px;
+}
+
+.filter p {
   margin: 0;
 }
 
