@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Abel&display=swap);
+@import url(https://use.typekit.net/ecw7swt.css);
 
 :root {
   --background: #333;
@@ -6,6 +7,7 @@
   --button: #789759;
   --text-color: #ccc;
   --body-font: "Abel", sans-serif;
+  --header-font: "corn-dog", sans-serif;
 }
 
 body {
@@ -20,6 +22,14 @@ body {
 
 .App * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: var(--header-font);
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000000;
 }
 
 .filter {
@@ -40,7 +50,7 @@ ul {
 }
 
 p {
-  margin: 10px;
+  margin: 10px 0 10px 0;
 }
 
 .filter p {
