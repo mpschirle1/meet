@@ -8,7 +8,9 @@ class EventList extends Component {
     const online = navigator.onLine;
     return (
       <div>
-        <WarningAlert text="Warning: You are currently offline. Only previously viewed events may be displayed." />
+        {!online && (
+          <WarningAlert text="Warning: You are currently offline. Only previously viewed events may be displayed." />
+        )}
         <ul className="EventList">
           {events.map((event) => (
             <li key={event.id}>

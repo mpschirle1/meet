@@ -40,6 +40,14 @@ class WarningAlert extends Alert {
     super(props);
     this.color = "Gold";
   }
+
+  getStyle = () => {
+    return {
+      color: this.color,
+      margin: "2em 0",
+      textAlign: "center",
+    };
+  };
 }
 
 export { InfoAlert, ErrorAlert, WarningAlert };
