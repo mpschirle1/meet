@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/meet/static/css/main.ec92a757.chunk.css",
-    "main.js": "/meet/static/js/main.993bdd2a.chunk.js",
-    "main.js.map": "/meet/static/js/main.993bdd2a.chunk.js.map",
-    "runtime-main.js": "/meet/static/js/runtime-main.453098d2.js",
-    "runtime-main.js.map": "/meet/static/js/runtime-main.453098d2.js.map",
-    "static/js/2.7d240696.chunk.js": "/meet/static/js/2.7d240696.chunk.js",
-    "static/js/2.7d240696.chunk.js.map": "/meet/static/js/2.7d240696.chunk.js.map",
-    "static/js/3.07cc382a.chunk.js": "/meet/static/js/3.07cc382a.chunk.js",
-    "static/js/3.07cc382a.chunk.js.map": "/meet/static/js/3.07cc382a.chunk.js.map",
+    "main.css": "/meet/static/css/main.bb2e31d9.chunk.css",
+    "main.js": "/meet/static/js/main.f021afdc.chunk.js",
+    "main.js.map": "/meet/static/js/main.f021afdc.chunk.js.map",
+    "runtime-main.js": "/meet/static/js/runtime-main.a6f38b03.js",
+    "runtime-main.js.map": "/meet/static/js/runtime-main.a6f38b03.js.map",
+    "static/js/2.94a74b0c.chunk.js": "/meet/static/js/2.94a74b0c.chunk.js",
+    "static/js/2.94a74b0c.chunk.js.map": "/meet/static/js/2.94a74b0c.chunk.js.map",
+    "static/js/3.07e371c8.chunk.js": "/meet/static/js/3.07e371c8.chunk.js",
+    "static/js/3.07e371c8.chunk.js.map": "/meet/static/js/3.07e371c8.chunk.js.map",
     "index.html": "/meet/index.html",
-    "precache-manifest.ca647d5703c31aa3669a9a80bf198202.js": "/meet/precache-manifest.ca647d5703c31aa3669a9a80bf198202.js",
+    "precache-manifest.8ed20166311fcb6b91a7e079728ceeb4.js": "/meet/precache-manifest.8ed20166311fcb6b91a7e079728ceeb4.js",
     "service-worker.js": "/meet/service-worker.js",
-    "static/css/main.ec92a757.chunk.css.map": "/meet/static/css/main.ec92a757.chunk.css.map",
-    "static/js/2.7d240696.chunk.js.LICENSE.txt": "/meet/static/js/2.7d240696.chunk.js.LICENSE.txt",
-    "static/js/main.993bdd2a.chunk.js.LICENSE.txt": "/meet/static/js/main.993bdd2a.chunk.js.LICENSE.txt"
+    "static/css/main.bb2e31d9.chunk.css.map": "/meet/static/css/main.bb2e31d9.chunk.css.map",
+    "static/js/2.94a74b0c.chunk.js.LICENSE.txt": "/meet/static/js/2.94a74b0c.chunk.js.LICENSE.txt",
+    "static/js/main.f021afdc.chunk.js.LICENSE.txt": "/meet/static/js/main.f021afdc.chunk.js.LICENSE.txt",
+    "static/media/meet-logo.1cd3ddf6.svg": "/meet/static/media/meet-logo.1cd3ddf6.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.453098d2.js",
-    "static/js/2.7d240696.chunk.js",
-    "static/css/main.ec92a757.chunk.css",
-    "static/js/main.993bdd2a.chunk.js"
+    "static/js/runtime-main.a6f38b03.js",
+    "static/js/2.94a74b0c.chunk.js",
+    "static/css/main.bb2e31d9.chunk.css",
+    "static/js/main.f021afdc.chunk.js"
   ]
 }
