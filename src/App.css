@@ -20,7 +20,8 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
+h1,
+h2 {
   font-family: var(--header-font);
   font-weight: 400;
   font-style: normal;
@@ -207,13 +208,25 @@ input[type="number"] {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 0 5%;
 }
+
 .data-vis-wrapper .recharts-responsive-container {
   min-width: 100%;
   display: flex;
 }
+
 .recharts-surface {
   overflow: visible;
+}
+
+.recharts-legend-wrapper {
+  margin-top: 5%;
+}
+
+.recharts-sector:hover {
+  opacity: 0.8;
+  transition: 0.5s;
 }
 
 @media only screen and (min-width: 992px) {
