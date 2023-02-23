@@ -10,6 +10,16 @@ A serverless, progressive web application (PWA) built with React using a test-dr
 
 Meet App (https://mpschirle1.github.io/meet/)
 
+## Dependencies
+
+- React v16.13.1
+- Recharts v1.8.6
+- Axios v0.27.2
+- Atatus v4.5.0
+- Enzyme v3.11.0
+- Jest-Cucumber v3.0.0
+- Puppeteer v3.3.0
+
 ## User Stories
 
 ### Feature 1: Filter Events by City
