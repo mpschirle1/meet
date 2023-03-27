@@ -8,7 +8,7 @@ A serverless, progressive web application (PWA) built with React using a test-dr
 
 ### Application Link
 
-Meet App (https://mpschirle1.github.io/meet/)
+Live Demo: [Meet App](https://mpschirle1.github.io/meet/)
 
 ## Key Features
 
